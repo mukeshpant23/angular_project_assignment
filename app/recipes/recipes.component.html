@@ -1,0 +1,14 @@
+<div class="row">
+  <button class="btn btn-success" (click)="addItem()">New Recipe</button>
+</div>
+<hr>
+<div class="row">
+  <div class="col-lg-6 col-md-6 col-sm6" style="overflow-y:auto;max-height:500px;">
+    <app-recipe-item [recip_item]="recipe" *ngFor="let recipe of recipes" 
+    
+    ></app-recipe-item>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm6">
+    <router-outlet></router-outlet>
+  </div>
+</div>

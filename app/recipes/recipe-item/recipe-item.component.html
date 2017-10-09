@@ -1,0 +1,8 @@
+<div class="row" style="border:1px solid gray;padding: 21px;" (click)="openView();">
+  <div class="row">
+    <h3>{{recip_item.name}}</h3><br> {{recip_item.desc}}
+  </div>
+  <div class="row pull-right">
+    <img [src]="recip_item.src" [alt]="recip_item.name" height="50" width="50" />
+  </div>
+</div>
